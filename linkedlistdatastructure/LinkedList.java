@@ -103,4 +103,23 @@ public class LinkedList {
 		}
 	}
 	
+	public int search(int data) {
+		int pos = 0;
+		int found = 0;
+		Node temp = head;
+		
+		while(temp != null) {
+			pos++;
+			if(temp.data == data) {
+				found = 1;
+				break;
+			}
+			temp = temp.next;
+		}
+		if(found == 0) {
+			return 0;
+		}
+		return pos;
+	}
+	
 }
