@@ -52,4 +52,31 @@ public class LinkedList {
 		head = newNode;
 	} 
 	
+	public void insertAtpos(int pos, int data) {
+		if(pos< 1) {
+			System.out.println("Invalid pos");
+			return;
+		}
+		else if(pos == 1) {
+			Node newNode = new Node(data);
+			newNode.next = head;
+			head = newNode;
+		}
+		else {
+		    int count = 2;
+			Node newNode = new Node(data);
+			Node temp = head;
+			while (temp.next != null) {
+				if(pos == count) {
+					break;
+				}
+				temp = temp.next;
+				count++;
+			}
+			Node nextNode = temp.next;
+			temp.next = newNode;
+			newNode.next = nextNode;
+		}
+	}
+	
 }
