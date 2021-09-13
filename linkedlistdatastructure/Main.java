@@ -6,7 +6,7 @@ public class Main {
 		linkedList.addFirst(70);
 		linkedList.addFirst(30);
 		linkedList.addFirst(56);
-		linkedList.pop();
+		linkedList.popLast();
 		
 		linkedList.print();
 		

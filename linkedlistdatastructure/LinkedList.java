@@ -86,6 +86,21 @@ public class LinkedList {
 		else {
 		  head = head.next;
 		}
-		
 	}
+	
+	public void popLast() {
+		if(head == null) {
+			System.out.println("Linkedlist is already null");
+		}
+		else {
+			Node curNode = head;
+			Node temp = head;
+			while(temp.next != null) {
+				curNode = temp;
+				temp = temp.next;
+			}
+			curNode.next = null;
+		}
+	}
+	
 }
