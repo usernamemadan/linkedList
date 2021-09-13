@@ -17,6 +17,8 @@ public class Main {
 			System.out.println("not found");
 		}
 		
+		linkedList.insertAtpos(pos+1, 40);
+		
 		linkedList.print();
 		
 	}
