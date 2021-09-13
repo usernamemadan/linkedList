@@ -79,4 +79,13 @@ public class LinkedList {
 		}
 	}
 	
+	public void pop() {
+		if(head == null) {
+			System.out.println("linked list is already null");
+		}
+		else {
+		  head = head.next;
+		}
+		
+	}
 }
