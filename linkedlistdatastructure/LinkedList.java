@@ -122,4 +122,39 @@ public class LinkedList {
 		return pos;
 	}
 	
+	public void deleteAtValue(int value) {
+		if(head.next != null ) {
+			if(head.data == value) {
+				head = head.next;
+				return;
+			}
+		}
+		if(head == null) {
+			return;
+		}
+		else {
+			Node temp = head;
+			Node prev = head;
+			while(temp != null) {
+				if(temp.data == value) {
+					prev.next = temp.next;
+					return;
+				}
+				prev = temp;
+				temp = temp.next;
+			}
+		}
+		System.out.println("value not found to delete");
+	}
+	
+	public int size() {
+		int size =0;
+		Node temp = head;
+		while(temp != null) {
+			temp = temp.next;
+			size++;
+		}
+		return size;
+	}
+	
 }

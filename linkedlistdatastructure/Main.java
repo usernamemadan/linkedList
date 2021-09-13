@@ -18,8 +18,14 @@ public class Main {
 		}
 		
 		linkedList.insertAtpos(pos+1, 40);
-		
 		linkedList.print();
+		
+		System.out.println("\nafter deleteting \n");
+		linkedList.deleteAtValue(40);
+		linkedList.print();
+		
+		int size = linkedList.size();
+		System.out.println("\nsize after deleting is : " + size);
 		
 	}
 }
