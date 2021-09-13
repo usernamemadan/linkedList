@@ -3,9 +3,9 @@ package com.linkedlistdatastructure;
 public class Main {
 	public static void main(String[] args) {
 		LinkedList linkedList = new LinkedList();
-		linkedList.add(56);
-		linkedList.add(30);
-		linkedList.add(70);
+		linkedList.addFirst(70);
+		linkedList.addFirst(30);
+		linkedList.addFirst(56);
 		
 		linkedList.print();
 		

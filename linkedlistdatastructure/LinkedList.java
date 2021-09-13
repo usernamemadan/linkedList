@@ -1,5 +1,6 @@
 package com.linkedlistdatastructure;
 
+
 public class LinkedList {
 
 	private Node head;
@@ -43,5 +44,12 @@ public class LinkedList {
 			temp = temp.next;
 		}
 	}
+	
+	public void addFirst(int data)
+	{
+		Node newNode = new Node(data);
+		newNode.next = head;
+		head = newNode;
+	} 
 	
 }
